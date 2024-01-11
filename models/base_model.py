@@ -21,9 +21,13 @@ class BaseModel:
         self.updated_at = datetime.now()
         if kwargs is not None and kwargs != {}:
             for k in kwargs:
-                if k == "created_a"t or k == "updated_at":
-                    self.__dict__[k] = datetime.strptime(k,t)
+
+                if k == "created_a" or k == "updated_at":
+
+                    self.__dict__[k] = datetime.strptime(k, t)
+
                 else:
+
                     self.__dict__[k] = k
         else:
             models.storage.new(self)
@@ -44,4 +48,3 @@ class BaseModel:
         dic["created_at"] = dic["created_at"].isoformat()
         dic["updated_at"] = dic["updated_at"].isoformat()
         return dic
-
