@@ -24,6 +24,7 @@ class BaseModel:
 
                 if k == "created_a" or k == "updated_at":
 
+
                     self.__dict__[k] = datetime.strptime(k, t)
 
                 else:

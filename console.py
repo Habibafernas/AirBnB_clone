@@ -8,9 +8,11 @@ import json
 from models import storage
 from models.base_model import BaseModel
 
+
 class HBNBCommand(cmd.Cmd):
+
     """defines the HBNB """
-    
+
     prompt = "(hbnb)"
 
     def EOF(self, line):
@@ -28,5 +30,3 @@ class HBNBCommand(cmd.Cmd):
         """handle the enter"""
 
         pass
-
-
