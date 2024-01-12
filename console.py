@@ -13,4 +13,20 @@ class HBNBCommand(cmd.Cmd):
     
     prompt = "(hbnb)"
 
+    def EOF(self, line):
+        """end of the file"""
+
+        print()
+        return True
+
+    def quit(self, line):
+        """exit the porgam"""
+
+        return True
+
+    def Enter(self, line):
+        """handle the enter"""
+
+        pass
+
 
