@@ -30,3 +30,15 @@ class HBNBCommand(cmd.Cmd):
         """handle the enter"""
 
         pass
+
+    def create(self, line):
+        """ Creates a new instance of BaseModel"""
+
+        if line == "" or line is None:
+            print("** class name missing **")
+        elif line not in storage.classes():
+            print("** class doesn't exist **")
+        else:
+            b = storage.classes()[line]()
+            b.save()
+            print(b.id)
