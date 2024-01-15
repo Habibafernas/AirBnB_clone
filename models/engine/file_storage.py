@@ -32,7 +32,8 @@ class FileStorage:
         with open(FileStorage.__file_path, "r", encoding="utf-8") as f:
 
             dic = json.load(f)
-            dic = {k: self.classes()[v["__class__"]](**v)
-                    for k, v in dic.items()}
+            dic = {
+                    k: self.classes()[v["__class__"]](**v)
+                    for k, v in dic.items()
+                    }
             FileStorage.__objects = dic
-
