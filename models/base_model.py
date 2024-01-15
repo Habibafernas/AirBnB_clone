@@ -15,7 +15,7 @@ class BaseModel:
         Args:
         *args (any): Unused.
         **kwargs (dict): Key/value pairs of attributes."""
-        t = %Y-%m-%dT%H:%M:%S.%f
+        t = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
