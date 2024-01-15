@@ -20,16 +20,15 @@ class BaseModel:
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
         if kwargs is not None and kwargs != {}:
-            for k in kwargs:
-
+            for k, v in kwargs:
                 if k == "created_a" or k == "updated_at":
 
 
-                    self.__dict__[k] = datetime.strptime(k, t)
+                    self.__dict__[k] = datetime.strptime(v, t)
 
                 else:
 
-                    self.__dict__[k] = k
+                    self.__dict__[k] = v
         else:
             models.storage.new(self)
 
