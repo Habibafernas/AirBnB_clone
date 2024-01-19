@@ -136,8 +136,8 @@ class HBNBCommand(cmd.Cmd):
                     storage.save()
 
     def all(self, line):
-        " Prints all string representation of all instances"
-         if line != "":
+        """ Prints all string representation of all instances"""
+        if line != "":
             words = line.split(' ')
             if words[0] not in storage.classes():
                 print("** class doesn't exist **")
