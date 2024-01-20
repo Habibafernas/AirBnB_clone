@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 class BaseModel:
-    """Represents the BaseModel of the HBnB project."""
+    """Represents the BaseModel ."""
 
     def __init__(self, *args, **kwargs):
         """Initialize a new BaseModel.
@@ -46,6 +46,6 @@ class BaseModel:
         return rdict
 
     def __str__(self):
-        """Return the print/str representation of the BaseModel instance."""
+        """Return the print/str representation of the instance."""
         clname = self.__class__.__name__
         return "[{}] ({}) {}".format(clname, self.id, self.__dict__)

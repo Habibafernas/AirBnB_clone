@@ -7,7 +7,7 @@ Data (python objects) generated are stored in a json file and can be accessed wi
 Description of the command interpreter:
 The interface of the application is just like the Bash shell except that this has a limited number of accepted commands that were solely defined for the purposes of the usage of the AirBnB website.
 
-This command line interpreter serves as the frontend of the web app where users can interact with the backend which was developed with python OOP programming.
+This command line interpreter serves as a frontend of the web app where users can interact with the backend which was developed with python OOP programming.
 
 Some of the commands available are:
 
@@ -99,7 +99,7 @@ In Interactive Mode the commands will need to be written with a keyboard when th
 Arguments
 Most commands have several options or arguments that can be used when executing the program. In order for the Shell to recognize those parameters, the user must separate everything with spaces.
 
-Example:
+Examples:
 
 
 user@ubuntu:~/AirBnB$ ./console.py
