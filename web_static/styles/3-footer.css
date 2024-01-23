@@ -5,8 +5,9 @@ footer
     height: 60px;
     width: 100%;
     border-top: 1px #CCCCCC;
-    position: absolute;
-    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
-    line-height: 60px;
 }
