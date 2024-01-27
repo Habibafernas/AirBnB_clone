@@ -6,9 +6,8 @@ body{
 	font-size: 14px;
 }
 
-.container{
+div.container{
     margin: auto;
     max-width: 1000px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30 px;
 }
